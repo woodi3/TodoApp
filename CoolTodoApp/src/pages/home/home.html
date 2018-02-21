@@ -1,0 +1,26 @@
+
+
+<ion-content padding>
+  <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <h1>Hello Person!</h1>
+  <ion-grid>
+    <ion-row>
+      <!-- <ng-container> -->
+        <ion-col *ngFor="let card of categories" col-6 col-md-6 col-lg-2 col-xl-3>
+            <ion-card text-center (tap) ="openTodoPage(card.type)">
+              <ion-card-header text-wrap>
+                {{card.title}}
+              </ion-card-header>
+            </ion-card>
+        </ion-col>
+      <!-- </ng-container> -->
+    </ion-row>
+    <ion-row justify-content-center>
+        <button ion-button strong block color="danger" (tap)="openAddTodoPage()">
+          Add Item
+        </button>
+    </ion-row>
+  </ion-grid>
+</ion-content>
