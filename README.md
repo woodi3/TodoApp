@@ -20,3 +20,5 @@ npm install
 * The server files have been commented to the best of my abilities, if you think otherwise, just message me with your questions. (server.js, routes/routes.js, models/todo.js)
 
 * I have not commented the ionic project yet. Will do that after Thursday (Feb 22).
+
+* If you don't plan on following along, you can read through the different files and read the comments.
